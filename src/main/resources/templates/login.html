@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+    <title>Login</title>
+    <link rel="stylesheet" href="../static/css/login.css" th:href="@{/css/login.css}">
+</head>
+<body>
+<div id="login-box">
+        <h1>登录</h1>
+        <div class="form">
+            <div class="item">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                <input type="text" id="stunum"  placeholder="学号/手机号" />
+            </div>
+            <div class="item">
+                <i class="fa fa-key" aria-hidden="true"></i>
+                <input type="password" id="stupwd"  placeholder="密码" />
+            </div>
+
+            <button id="jr">登录</button>
+
+            <div class="item">
+
+                <button id="emaillogin">邮箱登录</button>
+                <button id="findpassword" >找回密码</button>
+            </div>
+        </div>
+    <br/>
+    <input type="checkbox">
+    <a>已阅读同意用户协议</a>
+
+</div>
+<script src="../static/js/jquery.min.js" th:src="@{/js/jquery.min.js}"></script>
+<script src="1.js?ver=1" th:src="@{/js/login.js}" ></script>
+<script src="../static/js/tiaozhuang.js" th:src="@{js/tiaozhuang.js}"></script>
+<script src="../static/js/tiaozhuang2.js" th:src="@{js/tiaozhuang2.js}"></script>
+</body>
+</html>
+

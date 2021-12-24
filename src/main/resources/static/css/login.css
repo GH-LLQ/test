@@ -1,0 +1,104 @@
+body {
+    /*在这里可以设置不同的网页背景图片，也可以设置为循环播放的，暂时没实现*/
+    background: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+}
+
+
+#login-box {
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 10%;
+    text-align: center;
+    background: #00000090;
+    padding: 20px 20px;
+}
+
+#login-box h1 {
+    color: #fff;
+    font-size:2.5rem;
+}
+
+#login-box .form .item {
+    margin-top: 15px;
+}
+
+#login-box .form .item i {
+    font-size: 18px;
+    color: #fff;
+}
+
+#login-box .form .item2 i {
+    font-size: 18px;
+    color: #fff;
+}
+
+#login-box .form .item input {
+    width: 180px;
+    font-size: 18px;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    padding: 5px 10px;
+    background: #ffffff00;
+    color: #fff;
+}
+
+#login-box button {
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    border: 0;
+    border-radius: 15px;
+    background-color: #82c1b2;
+    transition: opacity 0.2s;
+    cursor: pointer;
+    position: relative;
+    /*在这里可以设置不同Login提交按钮的样式*/
+    /*background: #1abc9c;*/
+    /*background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);*/
+    /*background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);*/
+}
+
+#login-box button:before {
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    width: 100%;
+
+    height: 100%;
+
+    background-color: #000;
+
+    border: inherit;
+
+    border-color: #000;
+
+    border-radius: inherit;
+
+    transform: translate(-50%, -50%);
+
+    opacity: 0;
+
+    content: ' ';
+}
+
+#login-box button:active::before {
+
+    opacity: 0.1;
+
+}
+
+a{
+    color: #ffffff;
+}

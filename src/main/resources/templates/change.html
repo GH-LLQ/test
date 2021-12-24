@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../static/css/login.css" th:href="@{/css/login.css}">
+</head>
+<body>
+<div id="login-box">
+    <h1>设置新密码</h1>
+    <div class="form">
+        <div class="item">
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+            <input type="password" id="newpwd" placeholder="新密码" />
+        </div>
+        <div class="item">
+            <i class="fa fa-key" aria-hidden="true"></i>
+            <input type="password" id="newpwd2" placeholder="确认密码"/>
+        </div>
+    </div>
+    <button id="pass">提交</button>
+</div>
+<script src="../static/js/jquery.min.js" th:src="@{/js/jquery.min.js}"></script>
+<script src="../static/js/change.js" th:src="@{/js/change.js}"></script>
+</body>
+</html>
